@@ -8,7 +8,7 @@
 __URL__
 `localhost:8888/api/0.1/` if running locally,
 or
-`example.com/api/0.1` if hosted.
+`example.com:8888/api/0.1` if hosted.
 
 ##How to use the API
 
