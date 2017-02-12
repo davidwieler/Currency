@@ -46,8 +46,8 @@ var self = module.exports = {
 
 		if (typeof data.symbol === 'object') {
 
-			let str = '';
-			const symbolArray = data.symbol;
+			var str = '';
+			var symbolArray = data.symbol;
 
 			for (var i = symbolArray.length - 1; i >= 0; i--) {
 				str += symbolArray[i].toUpperCase() + ',';
