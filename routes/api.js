@@ -11,7 +11,7 @@ router.use(function (req, res, next) {
 });
 
 router.get('/0.1', jsonParser, function(req, res){
-    res.status(200).send('Up');
+    res.status(200).send('Up, go to https://github.com/davidwieler/Currency for details');
     res.end();
 });
 
