@@ -23,18 +23,18 @@ POST JSON to the above URL:
 or to get historical data
 
 `{
-	"base": "CAD", //__REQUIRED__
-	"amount": 10, //__REQUIRED__
-	"symbol": ["USD", "EUR"], //__REQUIRED__
-	"date": "1985-03-15" //__OPTIONAL__
+	"base": "CAD", 
+	"amount": 10, 
+	"symbol": ["USD", "EUR"], 
+	"date": "1985-03-15" 
 }`
 
 ###Details
 
-* "base" is the currency you wish to convert from. 
-* "amount" is the amount to convert. 
-* "symbol" is a string or array containing the currencies you wish to convert to. 
-* "date" is the date you wish to require about. Leave blank for latest rates. 
+* "base" is the currency you wish to convert from. __REQUIRED__
+* "amount" is the amount to convert. __REQUIRED__
+* "symbol" is a string or array containing the currencies you wish to convert to. __REQUIRED__
+* "date" is the date you wish to require about. Leave blank for latest rates. __OPTIONAL__
 
 ### Note
 
