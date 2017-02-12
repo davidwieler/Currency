@@ -20,6 +20,14 @@ POST JSON to the above URL:
 	"symbol": ["USD", "EUR"]
 }`
 
+or
+
+`{
+	"base": "USD",
+	"amount": 10,
+	"symbol": "EUR"
+}`
+
 or to get historical data
 
 `{
