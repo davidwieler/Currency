@@ -6,7 +6,7 @@ http.globalAgent.keepAlive = true
 
 //Set packages
 var errorhandler = require('errorhandler'),
-	bodyParser 	 	= require('body-parser'),
+	bodyParser = require('body-parser'),
 	helmet = require('helmet'),
 
 	app = express();
