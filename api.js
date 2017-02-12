@@ -25,21 +25,21 @@ var self = module.exports = {
 
 	ver001: (data, res) => {
 
-		if (typeof data.base === 'undefined') {
+		if (typeof data.base === 'undefined' || data.base === '') {
 			self.sendResponse(res, 403, 'Please supply a base currency symbol');
 			return;
 		}
 
-		var base = data.base;
+		var base = data.base.toUpperCase();
 
-		var url = 'http://api.fixer.io/latest?symbols=' + data.symbol.from + ',' + data.symbol.to;
+		var url = 'https://api.fixer.io/latest?symbols=' + data.symbol.from + ',' + data.symbol.to;
 
-		if (typeof data.symbol === 'undefined') {
+		if (typeof data.symbol === 'undefined' || data.symbol === '') {
 			self.sendResponse(res, 403, 'Please supply a currency symbol to convert to');
 			return;
 		}
 
-		if (typeof data.amount === 'undefined') {
+		if (typeof data.amount === 'undefined' || data.amount === '') {
 			self.sendResponse(res, 403, 'Please supply an amount to convert');
 			return;
 		}
@@ -57,7 +57,7 @@ var self = module.exports = {
 
 		} else {
 
-			var symbols = data.symbol;
+			var symbols = data.symbol.toUpperCase();
 
 		}
 
@@ -107,7 +107,7 @@ var self = module.exports = {
 			if (rates.hasOwnProperty(r)) {
 
 				var convert = (amount * rates[r]);
-				returns.push({from: data.base, to: r, rounded: convert.toFixed(2), result: convert, rate: rates[r]})
+				returns.push({from: data.base, to: r, roundedResult: convert.toFixed(2), fullResult: convert, rate: rates[r]})
 
 			}
 

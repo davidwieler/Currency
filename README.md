@@ -6,7 +6,7 @@
 
 ## API URL
 __URL__
-`localhost:8888/api/0.1/` if running locally.
+`localhost:8888/api/0.1/` if running locally,
 or
 `example.com/api/0.1` if hosted.
 
@@ -35,4 +35,8 @@ or to get historical data
 * "amount" is the amount to convert.
 * "symbol" is a string or array containing the currencies you wish to convert to.
 * "date" is the date you wish to require about. Leave blank for latest rates.
+
+### Note
+
+`https://api.fixer.io/` seems to have an issue with dates before the year 2000.
 
