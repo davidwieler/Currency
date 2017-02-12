@@ -2,27 +2,6 @@ var rest = require('restler');
 
 var self = module.exports = {
 
-	validJson: (data, res) => {
-
-		if (!data) {
-
-			self.sendResponse(res, 401, 'No data')
-			return
-
-		}
-		else{
-			if(Object.keys(data).length === 0 && data.constructor === Object){
-				self.sendResponse(res, 401, 'Invalid Data Type. Must be a JSON Object')
-
-				return
-			}
-
-			return true
-
-		}
-
-	},
-
 	ver001: (data, res) => {
 
 		if (typeof data.base === 'undefined' || data.base === '') {
