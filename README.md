@@ -4,7 +4,7 @@
 * Clone this repo
 * cd into directory, and run `npm install`
 
-## How to use the API
+## API URL
 __URL__
 `localhost:8888/api/0.1/` if running locally.
 or
