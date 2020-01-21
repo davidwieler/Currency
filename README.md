@@ -10,7 +10,7 @@ __URL__
 or
 `example.com:8888/api/0.1` if hosted.
 
-##How to use the API
+## How to use the API
 
 POST JSON to the above URL:
 
@@ -37,7 +37,7 @@ or to get historical data
 	"date": "1985-03-15" 
 }`
 
-###Details
+### Details
 
 * "base" is the currency you wish to convert from. __REQUIRED__
 * "amount" is the amount to convert. __REQUIRED__
